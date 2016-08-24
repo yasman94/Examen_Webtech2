@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bestelling</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+  </head>
+  <body>
+    	<center>
+		<table border='1' cellpadding='0' cellspacing='0'>
+		<tr>
+			<td>
+				<table>
+					<tr>
+					<td colspan='3' align='center'>
+					<h2>Geef bestelling in:</h2></td>
+					</tr>
+					<tr>
+					<td colspan='3'>&nbsp;</td>
+					</tr>
+					<tr>
+					<td><tr>
+							<td>Gerecht :</td>
+							<td><select id='gerecht' name="gerechten">
+  							<option value="sushi">Sushi</option>
+ 							<option value="sashimi">Sashimi</option>
+  							<option value="sahbu">Sahbu sahbu</option>
+ 						    <option value="sukiaki">Sukiaki</option>
+ 						    <option value="nikujaga">Nikujaga</option>
+ 						    <option value="tonkatsu">Tonkatsu</option>
+							</select></td>
+						</tr>
+					</td>
+					</tr>					
+					<tr>
+					<td>Hoeveelheid:</td><td><input id='hoeveelheid' type='text' size='20'></td>
+					</tr>
+					<tr>
+					<td>Tafelnummer:</td><td><input id='tafelnr' type='text' size='10'></td>
+					</tr>¨
+					<tr>
+					<td>Opmerkingen:</td><td><input id='opmerkingen' type='text' size='50'></td>
+					</tr>
+					<tr>
+					<td>Datum en uur:</td><td><span id="time"></span></td>
+					</tr>
+					<tr>
+						<td colspan='2' align='center'>
+						
+						<button onclick='createDoc()'>Bestellen</button>
+						
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<div id='output'></div>
+		</center>
+  </body>
+  <script>document.getElementById("time").innerHTML = new Date();</script>
+  <script src='scripts/jquery-2.1.4.min.js'></script>
+  <script src='scripts/main.js'></script>
+</html>
